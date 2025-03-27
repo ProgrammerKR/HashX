@@ -69,51 +69,14 @@ print(hasher.hash("Hello, World!"))  # Example usage
 4. **Finalization Rounds** – Enhanced diffusion eliminates weak patterns.  
 5. **Output Generation** – 256-bit hexadecimal hash is returned.  
 
-## 🔬 Benchmarking (Coming Soon)  
+## 🔬 Benchmarking  
 
-# 📊 HashX Benchmarking Report  
+HashX has been tested against **SHA-256, BLAKE3, xxHash, and MurmurHash3** for speed and efficiency.  
 
-This document compares **HashX** with other popular hashing algorithms: **SHA-256, BLAKE3, and MurmurHash3**.  
-The benchmark measures **speed (MB/s)**, **collision resistance**, and **avalanche effect**.  
+### **Benchmark Results**  
 
-## 🔬 Benchmarking Script (Python)  
-
-Run the following script to test HashX performance:  
-
-```python
-import time
-import hashlib
-import blake3
-import mmh3
-from hashx import HashX
-
-# Test Data (10MB)
-data = b"A" * (10 * 1024 * 1024)
-
-def benchmark_hashing(algorithm, func):
-    start = time.time()
-    func(data)
-    end = time.time()
-    speed = (len(data) / (end - start)) / (1024 * 1024)  # MB/s
-    return speed
-
-# Hashing functions
-hashx = HashX()
-tests = {
-    "HashX": lambda d: hashx.hash(d),
-    "SHA-256": lambda d: hashlib.sha256(d).hexdigest(),
-    "BLAKE3": lambda d: blake3.blake3(d).hexdigest(),
-    "MurmurHash3": lambda d: mmh3.hash_bytes(d)
-}
-
-# Run Benchmark
-results = {name: benchmark_hashing(name, func) for name, func in tests.items()}
-
-# Print Results
-print("\n📊 Benchmark Results:")
-for name, speed in results.items():
-    print(f"{name}: {speed:.2f} MB/s")
-```
+For detailed benchmark results, check the full report:  
+[📊 Benchmark Results](benchmark_results.md)
 
 ## 🛠️ Future Plans  
 
