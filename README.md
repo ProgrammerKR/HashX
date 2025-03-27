@@ -92,6 +92,26 @@ For detailed benchmark results, check the full report:
 
 Contributions are welcome! Feel free to fork the repo, submit issues, or create pull requests.  
 
+### 🛠️ How to Contribute?
+
+1. **Fork the Repository** (Click the "Fork" button at the top of the repo).
+2. **Clone your Fork**  
+   ```bash
+   git clone https://github.com/your-username/HashX.git
+   ```
+3. **Create a New Branch**  
+   ```bash
+   git checkout -b improve-docs
+   ```
+4. **Make Changes** (Edit `README.md` and add documentation updates).
+5. **Commit & Push**  
+   ```bash
+   git add README.md
+   git commit -m "Improved documentation & usage examples"
+   git push origin improve-docs
+   ```
+6. **Create a Pull Request** (Go to the original repo and submit a PR).
+
 ## 📜 License  
 
 This project is open-source and available under the **MIT License**.  
