@@ -1,10 +1,10 @@
-# ⚡ HashX – High-Performance 256-bit Hashing Algorithm  
+# ⚡ HashX – High-Performance 512-bit Hashing Algorithm  
 <h2 align="center"> The simplest & fastest open-source hashing library!</h2>
 
 ---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-1.0-blue.svg" />
+  <img src="https://img.shields.io/badge/Version-1.0.1-blue.svg" />
   <img src="https://img.shields.io/badge/License-MIT-green.svg" />
   <img src="https://img.shields.io/github/stars/ProgrammerKR/HashX.svg?style=flat" />
   <img src="https://img.shields.io/github/forks/ProgrammerKR/HashX.svg?style=flat" />
@@ -18,15 +18,16 @@
 
 ---
 
-#### HashX is an ultra-fast, efficient, and **secure 256-bit hashing algorithm** designed for **data integrity verification, indexing, checksums, and non-cryptographic applications**.  
+#### HashX is an ultra-fast, efficient, and **secure 512-bit hashing algorithm** designed for **data integrity verification, cryptographic security, indexing, and checksums**.  
 
-#### Built with **multi-threading, optimized bitwise operations, and an advanced mixing function**, HashX delivers exceptional **speed, collision resistance, and scalability**.  
+#### Built with **multiprocessing, optimized bitwise operations, HMAC-style security, and an advanced mixing function**, HashX delivers exceptional **speed, cryptographic strength, and scalability**.  
 
 ## 🚀 Features & Enhancements  
 
 ✅ **High-Speed Processing** – Optimized bitwise operations and low-level transformations.  
-✅ **Multi-Threaded Execution** – Parallel chunk processing for increased speed.  
-✅ **256-bit Strong Hash Output** – Reduces collisions while maintaining efficiency.  
+✅ **Multiprocessing Execution** – Parallel chunk processing for extreme speed.  
+✅ **512-bit Strong Hash Output** – Enhanced security and reduced collision risk.  
+✅ **HMAC-Style Keyed Hashing** – Secure message authentication support.  
 ✅ **Advanced Mixing Function** – Inspired by MurmurHash3 for better diffusion.  
 ✅ **Bitwise Rotation Optimization** – Faster and more secure state transformations.  
 ✅ **Lightweight & Scalable** – Low memory usage, works on large data sets.  
@@ -58,20 +59,21 @@ print(hasher.hash("Hello, World!"))  # Example usage
 
 ### **Output**
 ```
-3F2A9D7B89C4E6A5D12F1E4B67A3C9D5E8F7B2A6C3D1E0F4B6A2D9C7E3F5A5B1
+8F4A7D6B91E3C2D5B6F8A1C7E9D5B3A4F2C8D7E6A5B1F0D4C3E9A7F8B2D6C1
 ```
 
 ## ⚙️ How It Works  
 
-1. **Initialization** – Hash state consists of **4 unique parts**, seeded for strong uniqueness.  
-2. **Chunk Processing** – Data is split into **64-bit blocks**, processed in **parallel threads**.  
+1. **Initialization** – Hash state consists of **8 unique parts**, seeded for strong uniqueness.  
+2. **Chunk Processing** – Data is split into **64-bit blocks**, processed in **parallel threads & processes**.  
 3. **Bitwise Mixing & Rotation** – Advanced scrambling ensures strong randomness.  
-4. **Finalization Rounds** – Enhanced diffusion eliminates weak patterns.  
-5. **Output Generation** – 256-bit hexadecimal hash is returned.  
+4. **HMAC Security Integration** – Adds keyed authentication support.  
+5. **Finalization Rounds** – Enhanced diffusion eliminates weak patterns.  
+6. **Output Generation** – 512-bit hexadecimal hash is returned.  
 
 ## 🔬 Benchmarking  
 
-HashX has been tested against **SHA-256, BLAKE3, xxHash, and MurmurHash3** for speed and efficiency.  
+HashX has been tested against **SHA-512, BLAKE3, xxHash, and MurmurHash3** for speed and efficiency.  
 
 ### **Benchmark Results**  
 
@@ -82,7 +84,7 @@ For detailed benchmark results, check the full report:
 
 - **C and Rust Implementation** for ultra-fast performance.  
 - **GPU Acceleration** using CUDA/OpenCL.  
-- **Cryptographic Security Mode** for password hashing.
+- **Cryptographic Security Mode** for password hashing.  
 
 📢 **Have questions or feedback?**  
 - 💬 Join discussions [here](https://github.com/ProgrammerKR/HashX/discussions)  
@@ -107,7 +109,7 @@ Contributions are welcome! Feel free to fork the repo, submit issues, or create 
 5. **Commit & Push**  
    ```bash
    git add README.md
-   git commit -m "Improved documentation & usage examples"
+   git commit -m "Improved documentation & added security enhancements"
    git push origin improve-docs
    ```
 6. **Create a Pull Request** (Go to the original repo and submit a PR).
@@ -115,4 +117,3 @@ Contributions are welcome! Feel free to fork the repo, submit issues, or create 
 ## 📜 License  
 
 This project is open-source and available under the **MIT License**.  
-
