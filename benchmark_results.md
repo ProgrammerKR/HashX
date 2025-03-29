@@ -54,14 +54,17 @@ for name, time_taken in results:
     print("{:<15} | {:<10.5f}".format(name, time_taken))
 ```
 
-# Output 
+---
+
+## 📊 Output  
 
 ### 🔬 Benchmark Results:
 
-Algorithm       | Time (sec)
-----------------|-----------
-SHA-256         | 3.25671  
-BLAKE3          | 1.04258  
-MurmurHash3     | 0.57382  
-xxHash64        | 0.49894  
-HashX           | 0.37921
+| Algorithm      | Time (sec) |
+|---------------|------------|
+| SHA-256       | 3.25671    |
+| BLAKE3        | 1.04258    |
+| MurmurHash3   | 0.57382    |
+| xxHash64      | 0.49894    |
+| HashX         | 0.37921    |
+
